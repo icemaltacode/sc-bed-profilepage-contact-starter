@@ -1,0 +1,128 @@
+{{#section 'head'}}
+<style>
+    .form-popup {
+        box-sizing: border-box;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+    }
+
+    .form-container {
+        box-sizing: border-box;
+        max-width: 400px;
+        padding: 10px;
+        background-color:#8CD49C;
+        color: #1B3330;
+    }
+
+    .form-container input[type=text], .form-container input[type=email], .form-container textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .form-container input[type=text]:focus, .form-container input[type=email]:focus, .form-container textarea:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    .form-container .btn {
+        background-color: #1B3330;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .form-container .cancel {
+        background-color: red;
+        display: none;
+    }
+
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+
+    .form-container h1 {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .form-container #x {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        left: -25px;
+        top: -25px;
+        border: 2px solid #1B3330;
+        color: #1B3330;
+        position: relative;
+    }
+
+    .form-container #x:hover {
+        background-color: #feef88;
+        cursor: pointer;
+    }
+
+    .form-container #contact-result {
+        display: none;
+        color: #ffffff;
+        background-color: #1B3330;
+        padding: 16px 20px;
+        border: none;
+        margin-bottom:10px;
+        opacity: 0.8;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .form-popup {
+            right: 15px;
+        }
+
+        .form-container h1 {
+            margin-top: -30px;
+        }
+    }
+
+    @media only screen and (max-width: 415px) {
+        .form-popup {
+            right: 0;
+        }
+
+        .form-container #x {
+            display: none;
+        }
+
+        .form-container h1 {
+            margin-top: 0px;
+        }
+
+        .form-container .cancel {
+            background-color: red;
+            display: block;
+        }
+    }
+
+    @media only screen and (max-width: 999px) {
+        .form-popup {
+            right: 15px;
+        }
+    }
+</style>
+{{/section}}
+
+
+{{#section 'scripts'}}
+
+{{/section}}
